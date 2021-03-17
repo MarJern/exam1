@@ -1,0 +1,263 @@
+/* 
+
+Colours: 
+
+Black: #00010D;
+Dark Blue: #111426;
+Orange: #ED7300;
+Light Blue: #4A548C;
+Light Grey: #F9FDF5;
+
+
+Font: 
+
+Headlines: 
+
+Acumin Pro ExtraCondensed Black
+font-family: acumin-pro-extra-condensed, sans-serif;
+font-weight: 800;
+font-style: normal;
+
+Acumin Pro ExtraCondensed Bold
+font-family: acumin-pro-extra-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Acumin Pro ExtraCondensed Medium
+font-family: acumin-pro-extra-condensed, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Paragraph txts: 
+
+Univia Pro Book
+font-family: univia-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Univia Pro Regular
+font-family: univia-pro, sans-serif;
+font-weight: 500;
+font-style: normal;
+*/
+
+/* GLOBAL */
+
+html {
+    box-sizing: border-box;
+}
+
+:before, :after {
+    box-sizing: inherit;
+}
+
+body {
+line-height: 1.3em;
+font-family: univia-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: black;
+margin: 0 auto;
+color: #F9FDF5;
+/* overflow: hidden; */
+}
+
+header {
+    /* width: 100vw; */
+    /* height: 8vh; */
+}
+
+/* dropdown menu */
+
+.dropButton {
+    background-image: url(/images/exam1/menu.png);
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    margin-left: 2em;
+    width: 50px;
+    /* height: 50px; */
+    padding: 2.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropButton:hover, .dropButton:focus {
+    background-color:  black;
+    background-image: url(/images/exam1/pressed\ button.png);
+    border: none;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    top: 85%;
+    background-color: #111426;
+    width: 96.5vw;
+    z-index: 1;
+
+}
+
+.dropDownContent a {
+    padding: 2em 2em;
+    border: 1px solid black;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+.dropDownContent a:hover, .dropDownContent a:active{
+    background-color: #F9FDF5;
+    color: #ED7300;
+}
+
+.show {
+    display:block;
+}
+
+a:link {
+    color: #F9FDF5;;
+    text-decoration: none;
+}
+a:visited {
+    color: #F9FDF5;;
+    text-decoration: none;   
+}
+a:hover {
+    Color: #ED7300;
+}
+a:active {
+    color: #ED7300;
+}
+.orangeWord {
+    color: #ED7300;
+}
+
+.footerContainer {
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footerTxt {
+    flex: 2;
+    text-align: center;
+}
+
+.footerH3 {
+    display: inline;
+    padding: .5em 1em;
+    font-size: .6em;
+}
+
+.footerPng {
+    margin: 0;    
+    flex: 1;
+}
+
+.socialPng {
+    width: 30px;
+    
+}
+
+.error {
+    border: 1px solid darkred;
+    padding: 1rem;
+    color: darkred;
+    background: rgba(255, 0, 0, 0.1);
+}
+/* Homepage */
+
+.homeBanner {
+    position: relative;
+}
+
+.bannerTxtContainer {
+    position: absolute;
+    top: -9%;
+    left: -2.5%;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    line-height: 1.4em;
+    font-size: 3.5em;    
+}
+
+.break::before, .break::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.bannerImgContainer {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bannerImg {
+    object-fit: cover;  
+    object-position: -90px 50%;
+}
+
+.homeSchedule {
+    width: 100%;
+    height: 30%;
+    
+}
+.schedule {
+    font-size: .6em;
+    width: 80%;
+    height: 5%;
+    margin: 1em;
+    border: 1px dashed #F9FDF5;
+    padding: 2em; 
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #111426;
+    font-size: .8em;
+}
+
+.date {
+    font-weight: 700;
+}
+
+.scheduleName {
+    text-decoration: underline; 
+    margin-bottom: 0;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-size: 2em;
+}
+
+.scheduleDetails {
+    font-size: 1.2em;
+}
+
+
+
+/* Home mainContent */
+
+/* Info mainContent */
+
+/* Schedule mainContent */
+
+/* Contact mainContent */
+
+
+/* TABLET
+----------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* DESCTOP
+----------------*/
+
+@media only screen and (min-width: 769px) {
+
+}
