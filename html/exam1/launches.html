@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/dbb3wnj.css">
+    <link rel="stylesheet" type="text/css" href="/css/exam1.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Want to see live space launches? Follow us into space, watch space launches and learn about space shuttles and space travel!">
+    <meta name="author" content="MJ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Launch</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="top">
+        <section class="dropDown">
+            <nav onclick="dropFunction()" role="navigation" aria-label="Open dropdown menu" class="dropButton">
+            </nav>
+            <nav id="myDropdown" class="dropDownContent">
+                <a href="index.html">Home</a>
+                <a href="launches.html" aria-current="page">Upcoming Launches</a>
+                <a href="shuttles.html">Space Shuttles</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="menu-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="launches.html" aria-current="page">Upcoming Launches</a></li>
+                    <li><a href="shuttles.html">Space Shuttles</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </Section> 
+    </header>
+
+    <nav title="Breadcrumbs navigation" class="breadcrumb"><p><a href="index.html">Home</a> ▸ Upcoming Launches</p></nav>
+    
+    <!-- Body -->
+    <figure class="banner launches-img" title="Rocket launch in nighttime"></figure>
+
+    <main>
+        <section class="calendar-box">
+            <div class="h1-container">
+                <h1>Launch Calendar</h1>
+            </div>
+            <table class="calendar">
+                <tr class="table-heading">
+                    <th scope="col">Mission</td>
+                    <th scope="col">Date</td>
+                    <th scope="col">Flight Number</td>
+                </tr>
+            </table>
+        </section>
+        <Section class="youtube youtube-box">
+            <iframe src="https://www.youtube.com/embed/gA6ppby3JC8" title="YouTube video player" autoplay="1" mute="1">
+            </iframe>
+            <p>See live launches and more videos 
+                <a href="https://www.youtube.com/c/SpaceX/featured">here</a>
+            </p>
+        </Section>
+        <section class="launch-box">
+            <div class="h1-container">
+                <h1>Upcoming launch</h1>
+            </div>
+            <article class="flex-child launches">
+                <!-- launches goes here -->
+            </article>
+        </section>
+    </main>
+
+    <nav class="to-top" title="navigate back to the top of the page">
+        <a href="#top" ><img src="../../images/exam1/back-2-top.png" alt="back to top icon"></a>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <nav class="footer-txt">
+            <h3 class="footerH3"><a href="/#">Terms</a></h3>
+            <h3 class="footerH3"><a href="contact.html">Contact</a></h3>
+            <h3 class="footerH3"><a href="about.html">About</a></h3>
+        </nav>
+        <figure class="footer-element">
+            <a href="/#"><img src="/images/exam1/twitter@2x.png" alt="Twitter icon" class="socialPng"></a>
+            <a href="/#"><img src="/images/exam1/facebook@2x.png" alt="Facebook icon" class="socialPng"></a>
+            <a href="/#"><img src="/images/exam1/Instagram@2x.png" alt="Instagram icon" class="socialPng"></a>
+        </figure>
+    </footer>
+
+    <script src="/js/components/dropbutton.js"></script>
+    <script src="/js/components/errorMessage.js"></script>
+    <script src="../../js/exam/launches.js"></script>
+</body>
+
+</html>

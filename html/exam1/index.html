@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <link rel="stylesheet" href="https://use.typekit.net/dbb3wnj.css">
-    <link rel="stylesheet" type="text/css" href="/css/exam1.css">
-    <meta charset="utf-8">
-    <meta name="description" content="METADESCRIPTION">
-    <meta name="keywords" content="METACONTENT">
-    <meta name="author" content="MJ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WRITE TITLE HERE</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.typekit.net/dbb3wnj.css">
+        <link rel="stylesheet" type="text/css" href="/css/exam1.css">
+        <meta name="description" content="Want to see a live space launch? Follow us into space, and learn about space travel, human activity in space and much more!">
+        <meta name="author" content="MJ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space travel</title>
+    </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <!-- <figure class="menuBox">
-            <img src="/images/exam1/menu.png" class="menuPng">
-        </figure> -->
+    <body>
+        <!-- Header -->
+        <header class="header" id="top">
 
-        <div class="dropDown">
-            <button onclick="dropFunction()" value="run external javascript" class="dropButton"></button>
-            <div id="myDropdown" class="dropDownContent">
-            <a href="#">Explore Space</a>
-            <a href="#">Schedule</a>
-            <a href="#">Contact</a>
-            </div>
-        </div>
+            <section class="dropDown">
+                <nav onclick="dropFunction()" role="navigation" aria-label="Open dropdown menu" class="dropButton">
+                </nav>
+                <nav id="myDropdown" class="dropDownContent">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="launches.html">Upcoming Launches</a>
+                    <a href="shuttles.html">Space Shuttles</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <nav class="menu-items">
+                    <ul>
+                        <li><a href="index.html" aria-current="page">Home</a></li>
+                        <li><a href="launches.html">Upcoming Launches</a></li>
+                        <li><a href="shuttles.html">Space Shuttles</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section> 
+        </header>
+        <!-- Body -->
 
-        
-    </header>
+        <section class="banner home-banner">
+            <header class="banner-txt">
+                <h1>Follow
+                    <span class="break"> us </span>
+                    <span class="break"> into </span> 
+                    <span class="orangeWord">Space</span>
+                </h1>
+            </header>
+        </section>
 
-    <!-- Body -->
-    <div class="homeBanner">
-        <div class="bannerTxtContainer">
-            <a href="/#" class="bannerTxt"></a><blockquote>Follow us <span class="break">into</span> <span class="orangeWord">Space</span></blockquote></a>
-        </div>
-        <figure class="bannerImgContainer">
-            <img src="/images/exam1/BannerImg.jpg" alt="satelite floating over earth in space" class="bannerImg">
-        </figure>
-    </div>
+        <main>
+            <Section class="youtube">
+                <iframe src="https://www.youtube.com/embed/gA6ppby3JC8" title="YouTube video player" frameborder="0" autoplay="1" mute="1">
+                </iframe>
+                <p><a href="https://www.youtube.com/c/SpaceX/featured">See live launches and more videos here</a>
+                </p>
+            </Section>
+            <article class="flex-child home-flex">
+                <h2>Upcoming Launches</h2>
+                <div class="homeSchedule"></div>
+                <!-- Schedule with class="schedule" goes here-->
+                <a href="launches.html" role="button" class="button">See More</a>
+            </article>
+            <article class="flex-child home-flex">
+                <h2>SpaceX Achievements</h2>
+                <div class="achievements"></div>
+                <!-- achievements goes here-->
+                <a href="about.html" role="button" class="button">See More</a>
+            </article>
+        </main>
 
-    <div class="homeSchedule">
-        <!-- Schedule with class="calendar" goes here-->
-    </div>
+        <nav class="to-top" title="navigate back to the top of the page">
+            <a href="#top" ><img src="../../images/exam1/back-2-top.png" alt="back to top icon"></a>
+        </nav>
 
-    
+        <!-- Footer -->
+        <footer>
+                <nav class="footer-txt">
+                    <h4 class="footerH3"><a href="/#">Terms</a></h4>
+                    <h4 class="footerH3"><a href="contact.html">Contact</a></h4>
+                    <h4 class="footerH3"><a href="about.html">About</a></h4>
+                </nav>
+                <figure class="footer-element">
+                    <a href="/#"><img src="/images/exam1/twitter@2x.png" alt="Twitter icon" class="socialPng"></a>
+                    <a href="/#"><img src="/images/exam1/facebook@2x.png" alt="Facebook icon" class="socialPng"></a>
+                    <a href="/#"><img src="/images/exam1/Instagram@2x.png" alt="Instagram icon" class="socialPng"></a>
+                </figure>
+        </footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footerContainer">
-            <div class="footerTxt footerBox">
-                <h3 class="footerH3"><a href="/#">Terms</a></h3>
-                <h3 class="footerH3"><a href="/#">Contact</a></h3>
-                <h3 class="footerH3"><a href="/#">TEXT Here</a></h3>
-            </div>
-            <figure class="footerPng footerBox">
-                <a href="/#"><img src="/images/exam1/twitter@2x.png" alt="Twitter icon" class="socialPng"></a>
-                <a href="/#"><img src="/images/exam1/facebook@2x.png" alt="Facebook icon" class="socialPng"></a>
-                <a href="/#"><img src="/images/exam1/Instagram@2x.png" alt="Instagram icon" class="socialPng"></a>
-            </figure>
-        </div>
-    </footer>
-
-    <script src="/js/components/dropbutton.js"></script>
-    <script src="/js/components/errorMessage.js"></script>
-    <script src="/js/exam1.js"></script>
-</body>
+        <script src="/js/components/dropbutton.js"></script>
+        <script src="/js/components/errorMessage.js"></script>
+        <script src="../../js/exam/script.js"></script>
+    </body>
 
 </html>
